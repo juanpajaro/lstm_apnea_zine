@@ -51,4 +51,4 @@ echo "WORKER_HOSTS=${WORKER_HOSTS}"
 echo "SLURM_NTASKS=${SLURM_NTASKS}"
 
 echo "Iniciando entrenamiento distribuido..."
-srun python3 lstm_dis.py --per-worker-batch-size 32 --epochs 10
+srun python3 lstm_dis.py --per-worker-batch-size 2048 --epochs 10
