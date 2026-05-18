@@ -1,0 +1,4 @@
+Test Loss: 0.6275196075439453
+Test Accuracy: 0.6302212476730347
+Workers: 8
+Global Batch Size: 16384

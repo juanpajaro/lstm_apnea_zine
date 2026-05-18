@@ -1,0 +1,221 @@
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/exception_handler.py", line 18, in __call__
+        return func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/main.py", line 61, in main_subshell
+        exit_code = do_call(args, parser)
+                    ^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/conda_argparse.py", line 206, in do_call
+        result = getattr(module, func_name)(args, parser)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/main_init.py", line 162, in execute
+        return initialize(
+               ^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/core/initialize.py", line 139, in initialize
+        run_plan_elevated(plan2)
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/core/initialize.py", line 852, in run_plan_elevated
+        result = subprocess_call(
+                 ^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/gateways/subprocess.py", line 129, in subprocess_call
+        raise CalledProcessError(rc, command, output=formatted_output)
+    subprocess.CalledProcessError: Command '['sudo', '/zine/HPC02S1/miniconda3/bin/python', '-m', 'conda.core.initialize']' returned non-zero exit status 1.
+
+`$ /zine/HPC02S1/miniconda3/condabin/conda init`
+
+  environment variables:
+                 CIO_TEST=<not set>
+        CONDA_DEFAULT_ENV=pajaroenv
+                CONDA_EXE=/zine/HPC02S1/miniconda3/bin/conda
+             CONDA_PREFIX=/zine/HPC02S1/miniconda3/envs/pajaroenv
+           CONDA_PREFIX_1=/zine/HPC02S1/miniconda3
+    CONDA_PROMPT_MODIFIER=(pajaroenv)
+         CONDA_PYTHON_EXE=/zine/HPC02S1/miniconda3/bin/python
+               CONDA_ROOT=/zine/HPC02S1/miniconda3
+              CONDA_SHLVL=2
+           CURL_CA_BUNDLE=<not set>
+     JAVA_LD_LIBRARY_PATH=/zine/HPC02S1/miniconda3/lib/jvm/lib/server
+               LD_PRELOAD=<not set>
+               MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+                     PATH=/apps/bpike/miniforge3/bin:/zine/HPC02S1/miniconda3/envs/pajaroenv/bin
+                          :/zine/HPC02S1/miniconda3/condabin:/usr/local/bin:/usr/bin:/usr/local/
+                          sbin:/usr/sbin:/home/juanpajaro/.local/bin:/home/juanpajaro/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : pajaroenv
+    active env location : /zine/HPC02S1/miniconda3/envs/pajaroenv
+            shell level : 2
+       user config file : /home/juanpajaro/.condarc
+ populated config files : /zine/HPC02S1/miniconda3/.condarc
+          conda version : 25.3.0
+    conda-build version : not installed
+         python version : 3.12.2.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=sandybridge
+                          __conda=25.3.0=0
+                          __glibc=2.17=0
+                          __linux=3.10.0=0
+                          __unix=0=0
+       base environment : /zine/HPC02S1/miniconda3  (writable)
+      conda av data dir : /zine/HPC02S1/miniconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /zine/HPC02S1/miniconda3/pkgs
+                          /home/juanpajaro/.conda/pkgs
+       envs directories : /zine/HPC02S1/miniconda3/envs
+                          /home/juanpajaro/.conda/envs
+               platform : linux-64
+             user-agent : conda/25.3.0 requests/2.32.3 CPython/3.12.2 Linux/3.10.0-1160.119.1.el7.x86_64 centos/7.9.2009 glibc/2.17 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.12
+                UID:GID : 73207610:7002
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+/var/spool/slurmd/job08771/slurm_script: line 19: /zine/HPC0251/miniconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2026-05-17 21:00:34.181364: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-17 21:00:34.184339: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-17 21:00:34.195682: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-17 21:00:34.203413: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-17 21:00:44.280026: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-17 21:00:44.283222: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-17 21:00:44.283502: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-17 21:00:44.283944: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-17 21:00:44.302540: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w009:12348
+2026-05-17 21:00:44.311192: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w007:12346
+2026-05-17 21:00:44.311631: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w006:12345
+2026-05-17 21:00:44.311963: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w008:12347
+2026-05-17 21:00:44.350297: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:3 has connected to coordination service. Incarnation: 16345615588097179324
+2026-05-17 21:00:44.353866: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-17 21:00:44.496763: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:2 has connected to coordination service. Incarnation: 16068435274252653113
+2026-05-17 21:00:44.497540: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:0 has connected to coordination service. Incarnation: 1052956954451809551
+2026-05-17 21:00:44.497914: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-17 21:00:44.498714: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-17 21:00:44.498869: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:1 has connected to coordination service. Incarnation: 10747774213281986545
+2026-05-17 21:00:44.499361: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-17 21:01:38.493311: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:01:38.494403: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:01:42.966314: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:01:42.966961: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:01:43.218187: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:01:43.219281: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:01:44.544771: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:01:44.545539: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:03:46.695391: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.696246: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-17 21:03:46.698553: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:03:46.699540: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.699826: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-17 21:03:46.700679: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-17 21:03:46.737606: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.739372: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.748122: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.749019: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-17 21:03:46.755464: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-17 21:03:46.755737: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:03:46.756336: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-17 21:03:46.756722: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.815900: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:03:46.817185: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-17 21:03:46.864344: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-17 21:03:46.864993: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:46.868814: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-17 21:03:46.869351: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:46.882044: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-17 21:03:46.882772: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:46.912017: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.912299: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.912780: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-17 21:03:46.913100: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-17 21:03:46.938755: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-17 21:03:46.939780: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-17 21:03:46.963932: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-17 21:03:46.964669: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:47.008650: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:47.018743: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-17 21:03:47.019741: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-17 21:03:47.034884: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:47.121481: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:47.161976: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-17 21:03:50.667347: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:50.914678: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:51.043590: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:51.078954: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:56.257045: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:56.266160: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:56.287240: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-17 21:03:56.312050: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 8771 ON hpc02-w006 CANCELLED AT 2026-05-17T21:14:20 ***
+slurmstepd: error: *** STEP 8771.0 ON hpc02-w006 CANCELLED AT 2026-05-17T21:14:20 ***

@@ -1,0 +1,17 @@
+creamos variable entorno para CONDS
+ 
+Iniciamos CONDA
+Reiniciamos sistema equivalente al /.bashrc
+ 
+**********************************************
+Activamos el ambiente:
+El ambiente activado es: pajaroenv
+**********************************************
+ 
+HOSTS: hpc02-w006
+hpc02-w007
+hpc02-w008
+hpc02-w009
+WORKER_HOSTS=hpc02-w006:12345,hpc02-w007:12346,hpc02-w008:12347,hpc02-w009:12348
+SLURM_NTASKS=4
+Iniciando entrenamiento distribuido...
