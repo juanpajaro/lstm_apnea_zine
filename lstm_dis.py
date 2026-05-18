@@ -212,7 +212,8 @@ def build_model(max_tokens, hidden_dim=64):
     model = keras.Sequential(
         [
             layers.Embedding(max_tokens, hidden_dim, name="embedding", mask_zero=True),
-            layers.Bidirectional(layers.LSTM(64)),
+            layers.Bidirectional(layers.LSTM(256, return_sequences=True)),
+            layers.Bidirectional(layers.LSTM(128)),
             layers.Dense(64, activation="relu"),
             layers.Dense(1, activation="sigmoid"),
         ]
