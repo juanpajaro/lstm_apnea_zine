@@ -1,0 +1,85 @@
+creamos variable entorno para CONDS
+ 
+Iniciamos CONDA
+Reiniciamos sistema equivalente al /.bashrc
+ 
+**********************************************
+Activamos el ambiente:
+El ambiente activado es: pajaroenv
+**********************************************
+ 
+HOSTS: hpc02-w006
+hpc02-w007
+hpc02-w008
+hpc02-w009
+hpc02-w010
+hpc02-w011
+hpc02-w012
+hpc02-w013
+WORKER_HOSTS=hpc02-w006:12345,hpc02-w007:12346,hpc02-w008:12347,hpc02-w009:12348,hpc02-w010:12349,hpc02-w011:12350,hpc02-w012:12351,hpc02-w013:12352
+SLURM_NTASKS=8
+Iniciando entrenamiento distribuido...
+Task index: 6
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 3
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 0
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 5
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 1
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 7
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 2
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10
+Task index: 4
+Workers detectados: 8
+Replicas in sync: 8
+Global batch size: 16384
+Train CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_train.csv
+Val CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_val.csv
+Test CSV: /zine/HPC02S1/pajaroenv/lstm_apnea_zine/datos_apnea_test.csv
+Epoch 1/10

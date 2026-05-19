@@ -1,0 +1,734 @@
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/exception_handler.py", line 18, in __call__
+        return func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/main.py", line 61, in main_subshell
+        exit_code = do_call(args, parser)
+                    ^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/conda_argparse.py", line 206, in do_call
+        result = getattr(module, func_name)(args, parser)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/cli/main_init.py", line 162, in execute
+        return initialize(
+               ^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/core/initialize.py", line 139, in initialize
+        run_plan_elevated(plan2)
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/core/initialize.py", line 852, in run_plan_elevated
+        result = subprocess_call(
+                 ^^^^^^^^^^^^^^^^
+      File "/zine/HPC02S1/miniconda3/lib/python3.12/site-packages/conda/gateways/subprocess.py", line 129, in subprocess_call
+        raise CalledProcessError(rc, command, output=formatted_output)
+    subprocess.CalledProcessError: Command '['sudo', '/zine/HPC02S1/miniconda3/bin/python', '-m', 'conda.core.initialize']' returned non-zero exit status 1.
+
+`$ /zine/HPC02S1/miniconda3/condabin/conda init`
+
+  environment variables:
+                 CIO_TEST=<not set>
+        CONDA_DEFAULT_ENV=pajaroenv
+                CONDA_EXE=/zine/HPC02S1/miniconda3/bin/conda
+             CONDA_PREFIX=/zine/HPC02S1/miniconda3/envs/pajaroenv
+           CONDA_PREFIX_1=/zine/HPC02S1/miniconda3
+    CONDA_PROMPT_MODIFIER=(pajaroenv)
+         CONDA_PYTHON_EXE=/zine/HPC02S1/miniconda3/bin/python
+               CONDA_ROOT=/zine/HPC02S1/miniconda3
+              CONDA_SHLVL=2
+           CURL_CA_BUNDLE=<not set>
+     JAVA_LD_LIBRARY_PATH=/zine/HPC02S1/miniconda3/lib/jvm/lib/server
+               LD_PRELOAD=<not set>
+               MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+                     PATH=/apps/bpike/miniforge3/bin:/zine/HPC02S1/miniconda3/envs/pajaroenv/bin
+                          :/zine/HPC02S1/miniconda3/condabin:/usr/local/bin:/usr/bin:/usr/local/
+                          sbin:/usr/sbin:/home/juanpajaro/.local/bin:/home/juanpajaro/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : pajaroenv
+    active env location : /zine/HPC02S1/miniconda3/envs/pajaroenv
+            shell level : 2
+       user config file : /home/juanpajaro/.condarc
+ populated config files : /zine/HPC02S1/miniconda3/.condarc
+          conda version : 25.3.0
+    conda-build version : not installed
+         python version : 3.12.2.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=sandybridge
+                          __conda=25.3.0=0
+                          __glibc=2.17=0
+                          __linux=3.10.0=0
+                          __unix=0=0
+       base environment : /zine/HPC02S1/miniconda3  (writable)
+      conda av data dir : /zine/HPC02S1/miniconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /zine/HPC02S1/miniconda3/pkgs
+                          /home/juanpajaro/.conda/pkgs
+       envs directories : /zine/HPC02S1/miniconda3/envs
+                          /home/juanpajaro/.conda/envs
+               platform : linux-64
+             user-agent : conda/25.3.0 requests/2.32.3 CPython/3.12.2 Linux/3.10.0-1160.119.1.el7.x86_64 centos/7.9.2009 glibc/2.17 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.12
+                UID:GID : 73207610:7002
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+
+/var/spool/slurmd/job08774/slurm_script: line 19: /zine/HPC0251/miniconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2026-05-18 06:59:06.707837: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.240533: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.230470: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.225800: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.213817: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.228409: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.213957: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:07.232624: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-18 06:59:57.087825: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.088261: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.088222: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.088444: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.088819: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.089105: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.089258: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.092116: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2026-05-18 06:59:57.115622: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w006:12345
+2026-05-18 06:59:57.115988: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w011:12350
+2026-05-18 06:59:57.116095: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w008:12347
+2026-05-18 06:59:57.116947: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w012:12351
+2026-05-18 06:59:57.118609: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w007:12346
+2026-05-18 06:59:57.119119: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w009:12348
+2026-05-18 06:59:57.120391: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w013:12352
+2026-05-18 06:59:57.122665: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:450] Started server with target: grpc://hpc02-w010:12349
+2026-05-18 06:59:57.156492: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:6 has connected to coordination service. Incarnation: 8068202123559736512
+2026-05-18 06:59:57.159096: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.277714: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:2 has connected to coordination service. Incarnation: 2656061258550458182
+2026-05-18 06:59:57.278125: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:3 has connected to coordination service. Incarnation: 5035025101495188015
+2026-05-18 06:59:57.278293: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.278400: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.278693: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:0 has connected to coordination service. Incarnation: 3068156566311223930
+2026-05-18 06:59:57.278869: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:1 has connected to coordination service. Incarnation: 9484146704099615652
+2026-05-18 06:59:57.279331: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.279471: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:5 has connected to coordination service. Incarnation: 16613686778234459269
+2026-05-18 06:59:57.279572: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:4 has connected to coordination service. Incarnation: 17675044434880433552
+2026-05-18 06:59:57.279674: I tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:525] /job:worker/replica:0/task:7 has connected to coordination service. Incarnation: 1503847991659631932
+2026-05-18 06:59:57.280005: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.279995: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.280769: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 06:59:57.281247: I tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:298] Coordination agent has successfully connected.
+2026-05-18 07:01:26.408714: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:01:26.409917: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:29.794946: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:29.795823: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:31.756869: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:31.757876: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:32.237899: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:01:32.239337: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:32.821996: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:32.822650: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:32.884101: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:32.885168: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:33.076263: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:33.076855: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:33.109159: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:01:33.109962: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.026179: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.027179: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.027820: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.028756: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.043433: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.044589: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.046706: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.046921: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.047244: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.047982: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.048123: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-18 07:02:34.048571: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.050061: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.051350: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.053522: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.054885: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.088437: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.089415: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.091223: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.092268: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.111924: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.113007: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.119230: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.120295: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.121678: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.122733: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.122988: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-18 07:02:34.124541: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.127403: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.128443: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.132768: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.133941: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-18 07:02:34.219865: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.220858: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.226791: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.227549: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.249362: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.250114: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.258672: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.259334: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.263056: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.263715: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.274352: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.274516: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.275088: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.275498: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.285535: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.286697: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.291693: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.291715: W tensorflow/core/framework/dataset.cc:807] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+2026-05-18 07:02:34.292602: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.292600: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.305928: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.306910: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_14' with dtype string
+	 [[{{node Placeholder/_14}}]]
+2026-05-18 07:02:34.312743: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.314775: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.315084: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.316025: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.334153: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_12' with dtype resource
+	 [[{{node Placeholder/_12}}]]
+2026-05-18 07:02:34.335334: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_15' with dtype int64
+	 [[{{node Placeholder/_15}}]]
+2026-05-18 07:02:34.356827: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype string and shape [2320148]
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.357968: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.359992: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_13' with dtype int64
+	 [[{{node Placeholder/_13}}]]
+2026-05-18 07:02:34.361131: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_1' with dtype int32 and shape [2320148]
+	 [[{{node Placeholder/_1}}]]
+2026-05-18 07:02:34.412309: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.417703: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.436418: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.439615: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.455472: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.480305: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.503143: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:34.504492: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'Placeholder/_0' with dtype variant
+	 [[{{node Placeholder/_0}}]]
+2026-05-18 07:02:40.084525: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.204648: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.208536: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.290611: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.365454: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.387996: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.424916: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.483525: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:40.961859: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.061227: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.098430: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.151106: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.253726: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.311682: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.322713: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:41.419704: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.226307: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.437531: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.473439: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.519655: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.545952: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.679981: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.731126: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:50.924606: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.092169: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.301197: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.379565: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.385356: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.415688: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.539010: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.607426: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:02:51.793641: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor 'gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis' with dtype int32 and shape [1]
+	 [[{{node gradients/ReverseV2_grad/ReverseV2/ReverseV2/axis}}]]
+2026-05-18 07:03:52.211454: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.211072777","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.211664: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.211072777","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321704: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321509544","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321206: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.320948123","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.324055: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323797082","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.323219: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323011434","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321388: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321254429","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321895: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321509544","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321329: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.320948123","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.324244: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323797082","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.323438: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323011434","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:03:52.321590: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort DEADLINE_EXCEEDED: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321254429","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+2026-05-18 07:04:01.786400: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:7 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:7 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.549894: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:6 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:6 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550031: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:0 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550070: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:2 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:2 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550101: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:4 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:4 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550180: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:5 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550221: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:3 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:3 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:04.550259: E tensorflow/tsl/distributed_runtime/coordination/coordination_service.cc:961] /job:worker/replica:0/task:1 has been set to ERROR in coordination service: UNAVAILABLE: Task /job:worker/replica:0/task:1 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly. [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:06.262435: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: UNAVAILABLE: Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105846.253648803","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14} [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:06.269398: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort UNAVAILABLE: Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105846.253648803","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14} [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:13.161784: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:2/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323797082","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:13.236112: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:1/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321509544","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:13.545624: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:6/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.211072777","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:13.547500: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:3/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.320948123","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:14.243441: E tensorflow/tsl/distributed_runtime/coordination/coordination_service_agent.cc:737] Coordination agent is in ERROR: UNAVAILABLE: Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105853.891506489","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14} [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:14.257228: E tensorflow/core/common_runtime/base_collective_executor.cc:249] BaseCollectiveExecutor::StartAbort UNAVAILABLE: Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105853.891506489","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14} [type.googleapis.com/tensorflow.CoordinationServiceError='']
+2026-05-18 07:04:14.480929: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:7/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321254429","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:14.863969: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:4/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): DEADLINE_EXCEEDED: Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323011434","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321509544","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.211072777","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.320948123","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323797082","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.321254429","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.DeadlineExceededError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Deadline Exceeded
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105832.323011434","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Deadline Exceeded","grpc_status":4}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+srun: error: hpc02-w007: task 1: Exited with exit code 1
+srun: error: hpc02-w012: task 6: Exited with exit code 1
+srun: error: hpc02-w008: task 2: Exited with exit code 1
+srun: error: hpc02-w009: task 3: Exited with exit code 1
+srun: error: hpc02-w013: task 7: Exited with exit code 1
+srun: error: hpc02-w010: task 4: Exited with exit code 1
+2026-05-18 07:04:42.453518: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:0/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): UNAVAILABLE: Collective ops is aborted by: Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105846.253648803","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+2026-05-18 07:04:46.943637: I tensorflow/core/common_runtime/executor.cc:1197] [/job:worker/replica:0/task:5/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): UNAVAILABLE: Collective ops is aborted by: Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105853.891506489","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [type.googleapis.com/tensorflow.DerivedStatus='']
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnavailableError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105853.891506489","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:5 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30597]
+Traceback (most recent call last):
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+    main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+  File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+    model.fit(
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnavailableError: Graph execution error:
+
+Detected at node 'CollectiveReduceV2_1' defined at (most recent call last):
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 306, in <module>
+      main(per_worker_batch_size=args.per_worker_batch_size, epochs=args.epochs)
+    File "/zine/HPC02S1/pajaroenv/lstm_apnea_zine/lstm_dis.py", line 266, in main
+      model.fit(
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/zine/HPC02S1/miniconda3/envs/pajaroenv/lib/python3.9/site-packages/keras/optimizers/utils.py", line 175, in _all_reduce_sum_fn
+      return distribution.extended.batch_reduce_to(
+Node: 'CollectiveReduceV2_1'
+Collective ops is aborted by: Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.
+Additional GRPC error information from remote target /job:worker/replica:0/task:0:
+:{"created":"@1779105846.253648803","description":"Error received from peer ipv4:192.168.2.106:12345","file":"external/com_github_grpc_grpc/src/core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task /job:worker/replica:0/task:0 heartbeat timeout. This indicates that the remote task has failed, got preempted, or crashed unexpectedly.","grpc_status":14}
+The error could be from a previous operation. Restart your program to reset.
+	 [[{{node CollectiveReduceV2_1}}]] [Op:__inference_train_function_30658]
+srun: error: hpc02-w006: task 0: Exited with exit code 1
+srun: error: hpc02-w011: task 5: Exited with exit code 1
