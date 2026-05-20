@@ -177,7 +177,7 @@ def load_datasets_from_csv(batch_size=32):
     return train_ds, val_ds, test_ds
 
 
-def vectorize_datasets(train_ds, val_ds, test_ds, max_tokens=30000, max_length=600):
+def vectorize_datasets(train_ds, val_ds, test_ds, max_tokens=10000, max_length=30):
     """Vectoriza texto a secuencias enteras para el modelo LSTM."""
     text_vectorization = layers.TextVectorization(
         max_tokens=max_tokens,
@@ -212,8 +212,7 @@ def build_model(max_tokens, hidden_dim=64):
     model = keras.Sequential(
         [
             layers.Embedding(max_tokens, hidden_dim, name="embedding", mask_zero=True),
-            layers.Bidirectional(layers.LSTM(128, return_sequences=True)),
-            layers.Bidirectional(layers.LSTM(128)),
+            layers.Bidirectional(layers.LSTM(64)),            
             layers.Dense(64, activation="relu"),
             layers.Dense(1, activation="sigmoid"),
         ]
